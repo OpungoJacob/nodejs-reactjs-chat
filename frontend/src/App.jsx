@@ -14,9 +14,7 @@ function App() {
   } else {
     return <ChatsPage user ={user} /> ;
   }
-  return (
-    <div>App</div>
-  )
+ 
 }
 
-export default App
+export default App;
