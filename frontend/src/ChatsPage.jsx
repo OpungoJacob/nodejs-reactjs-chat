@@ -1,4 +1,4 @@
-import {MultiChatSocket, MultiChatWindow, useMultiChatLogic} from "react-chat-engine-advanced"
+/* import {MultiChatSocket, MultiChatWindow, useMultiChatLogic} from "react-chat-engine-advanced"
 
 const ChatsPage = (props) =>{
     const chatProps = useMultiChatLogic(
@@ -10,6 +10,24 @@ const ChatsPage = (props) =>{
         <div style={{height: '100vh'}}>
             <MultiChatSocket {...chatProps} />
             <MultiChatWindow {...chatProps} style={{height: '100%'}} />
+        </div>
+    )
+}
+export default ChatsPage; */
+
+//below is the implementation with react-chat-pretty
+
+import {PrettyChatWindow} from 'react-chat-engine-pretty' 
+
+const ChatsPage = (props) =>{
+    
+    return (
+        <div style={{height: '100vh'}}>
+            <PrettyChatWindow
+                projectid=''
+                username=''
+                secret=''
+                style={{height: '100%'}}
         </div>
     )
 }
